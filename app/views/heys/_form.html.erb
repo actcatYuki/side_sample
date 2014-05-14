@@ -1,0 +1,33 @@
+<%= form_for(@hey) do |f| %>
+  <% if @hey.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hey.errors.count, "error") %> prohibited this hey from being saved:</h2>
+
+      <ul>
+      <% @hey.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hey %><br>
+    <%= f.text_field :hey %>
+  </div>
+  <div class="field">
+    <%= f.label :index %><br>
+    <%= f.text_field :index %>
+  </div>
+  <div class="field">
+    <%= f.label :hello %><br>
+    <%= f.text_field :hello %>
+  </div>
+  <div class="field">
+    <%= f.label :bye %><br>
+    <%= f.text_field :bye %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

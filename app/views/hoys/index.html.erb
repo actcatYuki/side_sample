@@ -1,0 +1,31 @@
+<h1>Listing hoys</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hey</th>
+      <th>Index</th>
+      <th>Hello</th>
+      <th>Bye</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hoys.each do |hoy| %>
+      <tr>
+        <td><%= hoy.hey %></td>
+        <td><%= hoy.index %></td>
+        <td><%= hoy.hello %></td>
+        <td><%= hoy.bye %></td>
+        <td><%= link_to 'Show', hoy %></td>
+        <td><%= link_to 'Edit', edit_hoy_path(hoy) %></td>
+        <td><%= link_to 'Destroy', hoy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hoy', new_hoy_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hey:</strong>
+  <%= @hoge.hey %>
+</p>
+
+<p>
+  <strong>Index:</strong>
+  <%= @hoge.index %>
+</p>
+
+<p>
+  <strong>Hello:</strong>
+  <%= @hoge.hello %>
+</p>
+
+<p>
+  <strong>Bye:</strong>
+  <%= @hoge.bye %>
+</p>
+
+<%= link_to 'Edit', edit_hoge_path(@hoge) %> |
+<%= link_to 'Back', hoges_path %>

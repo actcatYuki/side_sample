@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hey:</strong>
+  <%= @hey.hey %>
+</p>
+
+<p>
+  <strong>Index:</strong>
+  <%= @hey.index %>
+</p>
+
+<p>
+  <strong>Hello:</strong>
+  <%= @hey.hello %>
+</p>
+
+<p>
+  <strong>Bye:</strong>
+  <%= @hey.bye %>
+</p>
+
+<%= link_to 'Edit', edit_hey_path(@hey) %> |
+<%= link_to 'Back', heys_path %>

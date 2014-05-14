@@ -1,0 +1,31 @@
+<h1>Listing heys</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hey</th>
+      <th>Index</th>
+      <th>Hello</th>
+      <th>Bye</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @heys.each do |hey| %>
+      <tr>
+        <td><%= hey.hey %></td>
+        <td><%= hey.index %></td>
+        <td><%= hey.hello %></td>
+        <td><%= hey.bye %></td>
+        <td><%= link_to 'Show', hey %></td>
+        <td><%= link_to 'Edit', edit_hey_path(hey) %></td>
+        <td><%= link_to 'Destroy', hey, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hey', new_hey_path %>

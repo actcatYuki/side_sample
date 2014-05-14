@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hey: MyString
+  index: MyString
+  hello: MyString
+  bye: MyString
+
+two:
+  hey: MyString
+  index: MyString
+  hello: MyString
+  bye: MyString
